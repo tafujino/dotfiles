@@ -1,0 +1,6 @@
+*~
+*/.*
+.emacs.d/recentf
+.emacs.d/tramp
+.emacs.d/elpa
+.emacs.d/ac-comphist.dat
