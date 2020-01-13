@@ -4,3 +4,7 @@
 .emacs.d/tramp
 .emacs.d/elpa
 .emacs.d/ac-comphist.dat
+.emacs.d/kkcrc
+.emacs.d/straight/
+.emacs.d/transient/
+
