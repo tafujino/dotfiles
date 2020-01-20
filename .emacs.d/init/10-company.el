@@ -3,9 +3,11 @@
 (use-package company)
 
 (global-company-mode)
-(setq company-idle-delay 0)
+(setq company-idle-delay 0.2)
 (setq company-minimum-prefix-length 2)
 (setq company-selection-wrap-around t)
+(setq company-show-numbers t)
+
 
 (define-key company-active-map (kbd "M-n") nil)
 (define-key company-active-map (kbd "M-p") nil)

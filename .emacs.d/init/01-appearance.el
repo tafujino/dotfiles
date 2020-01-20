@@ -12,7 +12,7 @@
 
 (require 'paren)
 (set-face-attribute 'show-paren-match nil :background "LightGoldenrod")
-;;(set-face-attribute 'show-paren-match nil :background "Yellow")
+(set-face-attribute 'show-paren-match nil :foreground "RoyalBlue4")
 
 ;;; disable bell
 
