@@ -8,7 +8,6 @@
 (setq company-selection-wrap-around t)
 (setq company-show-numbers t)
 
-
 (define-key company-active-map (kbd "M-n") nil)
 (define-key company-active-map (kbd "M-p") nil)
 (define-key company-active-map (kbd "C-n") 'company-select-next)
