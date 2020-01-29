@@ -9,7 +9,6 @@
 ;;; show-paren-mode
 
 (show-paren-mode 1)
-(setq show-paren-style 'mixed) 
 
 (require 'paren)
 (set-face-attribute 'show-paren-match nil :background "gold")
@@ -31,3 +30,7 @@
 (global-hl-line-mode t)
 (set-face-background 'hl-line "gray20")
 (set-face-attribute 'hl-line nil :inherit nil)
+
+;; show trailing whitespace
+(setq-default show-trailing-whitespace t)
+(set-face-background 'trailing-whitespace "cornflower blue")
