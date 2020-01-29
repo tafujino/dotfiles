@@ -9,6 +9,7 @@
 ;;; show-paren-mode
 
 (show-paren-mode 1)
+(setq show-paren-style 'mixed) 
 
 (require 'paren)
 (set-face-attribute 'show-paren-match nil :background "gold")
@@ -24,3 +25,9 @@
 (use-package highlight-indent-guides)
 (setq highlight-indent-guides-method 'column)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+
+;; highlight current line
+
+(global-hl-line-mode t)
+(set-face-background 'hl-line "gray20")
+(set-face-attribute 'hl-line nil :inherit nil)
