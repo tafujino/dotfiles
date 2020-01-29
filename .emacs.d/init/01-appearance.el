@@ -34,8 +34,8 @@
 ;; show trailing whitespace and lines
 
 (use-package whitespace)
-(set-face-background 'whitespace-empty "light sky blue")
-(set-face-background 'whitespace-trailing "light sky blue")
+(set-face-background 'whitespace-empty "pale turquoise")
+(set-face-background 'whitespace-trailing "pale turquoise")
 (setq whitespace-style '(face
 			 trailing
                          empty))
