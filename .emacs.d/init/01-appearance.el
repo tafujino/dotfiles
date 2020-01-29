@@ -11,11 +11,16 @@
 (show-paren-mode 1)
 
 (require 'paren)
-;;(set-face-attribute 'show-paren-match nil :background "LightGoldenrod")
 (set-face-attribute 'show-paren-match nil :background "gold")
-;;(set-face-attribute 'show-paren-match nil :foreground "RoyalBlue4")
 (set-face-attribute 'show-paren-match nil :foreground "dodger blue")
 
 ;;; disable bell
 
 (setq ring-bell-function 'ignore)
+
+;; highlight-indent-guides
+;; https://github.com/DarthFennec/highlight-indent-guides
+
+(use-package highlight-indent-guides)
+(setq highlight-indent-guides-method 'column)
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
