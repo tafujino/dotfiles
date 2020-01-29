@@ -31,6 +31,12 @@
 (set-face-background 'hl-line "gray20")
 (set-face-attribute 'hl-line nil :inherit nil)
 
-;; show trailing whitespace
-(setq-default show-trailing-whitespace t)
-(set-face-background 'trailing-whitespace "cornflower blue")
+;; show trailing whitespace and lines
+
+(use-package whitespace)
+(set-face-background 'whitespace-empty "light sky blue")
+(set-face-background 'whitespace-trailing "light sky blue")
+(setq whitespace-style '(face
+			 trailing
+                         empty))
+(global-whitespace-mode)
