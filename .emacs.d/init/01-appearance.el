@@ -11,8 +11,8 @@
 (show-paren-mode 1)
 
 (require 'paren)
-(set-face-attribute 'show-paren-match nil :background "gold")
-(set-face-attribute 'show-paren-match nil :foreground "dodger blue")
+(set-face-attribute 'show-paren-match nil :background "cornflower blue")
+(set-face-attribute 'show-paren-match nil :foreground "white smoke")
 
 ;;; disable bell
 
@@ -40,3 +40,8 @@
 			 trailing
                          empty))
 (global-whitespace-mode)
+
+;; isearch
+
+(set-face-attribute 'isearch nil :foreground "white somke" :background "violet red")
+(set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
