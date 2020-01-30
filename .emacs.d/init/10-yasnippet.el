@@ -1,7 +1,8 @@
-(use-package yasnippet)
+(use-package yasnippet
+  :ensure t
+  :diminish yas-minor-mode
+  :init (yas-global-mode t))
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
 
 (use-package yasnippet-snippets)

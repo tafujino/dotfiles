@@ -2,12 +2,9 @@
 (use-package swiper)
 (use-package counsel)
 (use-package ivy-hydra)
+(use-package ivy-dired-history)
 
 (setq ivy-use-virtual-buffers t)
-;;(setq enable-recursive-minibuffers t)
-;;(setq ivy-extra-directories nil)
-;;(setq ivy-re-builders-alist
-;;      '((t . ivy--regex-plus)))
 (ivy-mode 1)
 
 ;; counsel
@@ -24,3 +21,17 @@
 ;; magit
 (with-eval-after-load "magit"
   (setq magit-completing-read-function 'ivy-completing-read))
+
+;; ivy-dired-history
+(require 'savehist)
+(add-to-list 'savehist-additional-variables 'ivy-dired-history-variable)
+(savehist-mode 1)
+;; or if you use desktop-save-mode
+;; (add-to-list 'desktop-globals-to-save 'ivy-dired-history-variable)
+
+
+(with-eval-after-load 'dired
+  (require 'ivy-dired-history)
+  ;; if you are using ido,you'd better disable ido for dired
+  ;; (define-key (cdr ido-minor-mode-map-entry) [remap dired] nil) ;in ido-setup-hook
+  (define-key dired-mode-map "," 'dired))

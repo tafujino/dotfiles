@@ -21,7 +21,8 @@
 ;; highlight-indent-guides
 ;; https://github.com/DarthFennec/highlight-indent-guides
 
-(use-package highlight-indent-guides)
+(use-package highlight-indent-guides
+  :diminish highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'column)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
@@ -34,8 +35,10 @@
 ;; show trailing whitespace and lines
 
 (use-package whitespace)
-(set-face-background 'whitespace-empty "light steel blue")
-(set-face-background 'whitespace-trailing "light steel blue")
+;;(set-face-background 'whitespace-empty "LightSteelBlue4")
+;;(set-face-background 'whitespace-trailing "LightSteelBlue4")
+(set-face-background 'whitespace-empty "LavenderBlush4")
+(set-face-background 'whitespace-trailing "LavenderBlush4")
 (setq whitespace-style '(face
 			 trailing
                          empty))
