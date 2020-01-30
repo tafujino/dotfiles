@@ -1,10 +1,10 @@
 (use-package ivy)
+(use-package swiper)
 (use-package counsel)
 (use-package ivy-hydra)
 
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-(setq ivy-height 16)
 (setq ivy-extra-directories nil)
 (setq ivy-re-builders-alist
       '((t . ivy--regex-plus)))
@@ -15,3 +15,7 @@
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (setq counsel-find-file-ignore-regexp (regexp-opt '("./" "../")))
 (global-set-key (kbd "C-c r") 'counsel-recentf)
+
+;; swiper
+(setq swiper-include-line-number-in-search t)
+(global-set-key "\C-s" 'swiper)
