@@ -3,8 +3,6 @@
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 ;;(setq ruby-electric-expand-delimiters-list nil)
 
-;;(add-hook 'ruby-mode-hook 'eglot-ensure)
-
 (add-hook 'ruby-mode-hook (lambda() (company-mode)))
 
 (add-hook 'ruby-mode-hook #'lsp)
@@ -24,5 +22,3 @@
 				       (with-lsp-workspace workspace
 					 (lsp--set-configuration
 					  (lsp-configuration-section "solargraph")))))))
-
-
