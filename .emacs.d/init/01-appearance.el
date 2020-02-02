@@ -32,20 +32,6 @@
 (set-face-background 'hl-line "gray20")
 (set-face-attribute 'hl-line nil :inherit nil)
 
-;; show trailing whitespace and lines
-
-(use-package whitespace)
-;;(set-face-background 'whitespace-empty "LavenderBlush4")
-;;(set-face-background 'whitespace-trailing "LavenderBlush4")
-;;(set-face-background 'whitespace-empty "thistle4")
-;;(set-face-background 'whitespace-trailing "thistle4")
-(set-face-background 'whitespace-empty "pink4")
-(set-face-background 'whitespace-trailing "pink4")
-(setq whitespace-style '(face
-			 trailing
-                         empty))
-(global-whitespace-mode)
-
 ;; isearch
 
 (set-face-attribute 'isearch nil :foreground "white somke" :background "violet red")
