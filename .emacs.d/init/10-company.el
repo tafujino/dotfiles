@@ -36,7 +36,21 @@
 (define-key company-active-map [tab] 'company-complete-common2)
 (define-key company-active-map [backtab] 'company-select-previous)
 
-; see https://qiita.com/syohex/items/8d21d7422f14e9b53b17
+;; see https://qiita.com/wktkshn/items/3ac46671d1c242a59f7e
+
+(defun edit-category-table-for-company-dabbrev (&optional table)
+  (define-category ?s "word constituents for company-dabbrev" table)
+  (let ((i 0))
+    (while (< i 128)
+      (if (equal ?w (char-syntax i))
+      (modify-category-entry i ?s table)
+    (modify-category-entry i ?s table t))
+      (setq i (1+ i)))))
+
+(edit-category-table-for-company-dabbrev)
+(setq company-dabbrev-char-regexp "\\cs")
+
+;; see https://qiita.com/syohex/items/8d21d7422f14e9b53b17
 
 (set-face-attribute 'company-tooltip nil
                     :foreground "black" :background "lightgrey")

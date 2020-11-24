@@ -20,4 +20,3 @@
 (use-package init-loader)
 
 (init-loader-load "~/.emacs.d/init")
-
