@@ -1,11 +1,5 @@
-(use-package flycheck-rust)
-(use-package racer)
+(use-package rustic)
 
-(eval-after-load "rust-mode"
-  '(setq-default rust-format-on-save t))
-
-(add-hook 'rust-mode-hook (lambda ()
-                            (racer-mode)
-                            (flycheck-rust-setup)))
-
-(add-hook 'racer-mode-hook #'eldoc-mode)
+(setq rustic-lsp-server 'rls)
+(setq rustic-lsp-format t)
+(setq rustic-format-trigger 'on-save)
