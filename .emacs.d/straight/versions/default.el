@@ -3,7 +3,7 @@
  ("company-mode" . "88001d794d963049339883216b6606de0a1209ea")
  ("company-tabnine" . "98e9e8b38b6ca289fbe265b0a7b62c7fe38ed0e2")
  ("cwl-mode" . "bdeb9c0734126f940db80bfb8b1dc735dab671c7")
- ("dash.el" . "a17b6b5409825891423b3867cd7bea84852d6ddd")
+ ("dash.el" . "be4e939b8982fa9a6ac5286027ea8ae1ff9b9b19")
  ("dockerfile-mode" . "07dde72b0e356d772fb65b969bd6decfa166e4d7")
  ("el-get" . "84dd1837f9ac80a329ab0c2de6859777f445f8ff")
  ("elisp-ruby-electric" . "f2323cd9b5df3b34aa9810ba8109502824925d23")
