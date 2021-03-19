@@ -19,7 +19,7 @@
  ("init-loader" . "10b8d7b12acbd1036e68dfb59f460714baedaa33")
  ("ivy-dired-history" . "c9c67ea1ee5e68443f0e6006ba162d6c8d868b69")
  ("let-alist" . "6708ec0b2e6dff80ff5b64698aa009d9070a2ed2")
- ("lsp-haskell" . "6d481f97e62b0fd2455e8f7a36429981277445b1")
+ ("lsp-haskell" . "7efbef3d206989faa8b691a4230a3ed872542187")
  ("lsp-mode" . "4c7fd8a5a51128039475deacae1e28bd3f750db8")
  ("lsp-ui" . "01f89e40f473032376f70a90e33831356832f084")
  ("magit" . "47c57839b80c05f792de288da050fabac90639d6")
