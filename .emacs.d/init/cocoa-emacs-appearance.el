@@ -13,9 +13,9 @@
        (set-face-attribute 'default nil :family "Menlo" :height 130)
        (set-fontset-font (frame-parameter nil 'font)
 			 'japanese-jisx0208
-			 (font-spec :family "Hiragino Kaku Gothic ProN"))
+			 (font-spec :family "YuGothic"))
        (add-to-list 'face-font-rescale-alist
-		    '(".*Hiragino Kaku Gothic ProN.*" . 1.1)) )
+		    '("YuGothic" . 1.2)) )
       (t 0))
 
 ;;; path

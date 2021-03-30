@@ -6,6 +6,10 @@
 
 (menu-bar-mode -1)
 
+;;; background
+
+(set-face-background 'default "gray15")
+
 ;;; show-paren-mode
 
 (show-paren-mode 1)
