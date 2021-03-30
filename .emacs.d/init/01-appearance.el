@@ -11,7 +11,7 @@
 (show-paren-mode 1)
 
 (require 'paren)
-(set-face-attribute 'show-paren-match nil :background "cornflower blue")
+(set-face-attribute 'show-paren-match nil :background "DeepSkyBlue1")
 (set-face-attribute 'show-paren-match nil :foreground "white smoke")
 
 ;;; disable bell

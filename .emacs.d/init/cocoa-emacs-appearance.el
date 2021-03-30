@@ -1,3 +1,12 @@
+;; default directory
+
+(setq default-directory "~/")
+(setq command-line-default-directory "~/")
+
+;;; keyboard
+
+(setq mac-command-modifier 'meta)
+
 ;;; font
 
 (cond ((display-graphic-p)
@@ -8,3 +17,8 @@
        (add-to-list 'face-font-rescale-alist
 		    '(".*Hiragino Kaku Gothic ProN.*" . 1.1)) )
       (t 0))
+
+;;; path
+
+(use-package exec-path-from-shell)
+(exec-path-from-shell-initialize)
