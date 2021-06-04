@@ -38,5 +38,5 @@
 
 ;; isearch
 
-(set-face-attribute 'isearch nil :foreground "white somke" :background "violet red")
+(set-face-attribute 'isearch nil :foreground "white somke" :background "tomato2")
 (set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
