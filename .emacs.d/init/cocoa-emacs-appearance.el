@@ -18,6 +18,10 @@
 		    '("YuGothic" . 1.2)) )
       (t 0))
 
+;; disable cursor blinking
+
+(blink-cursor-mode -1)
+
 ;;; path
 
 (use-package exec-path-from-shell)

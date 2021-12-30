@@ -4,7 +4,7 @@
 ;;(setq ruby-electric-expand-delimiters-list nil)
 
 (add-hook 'ruby-mode-hook (lambda() (company-mode)))
-
+;;
 (add-hook 'ruby-mode-hook #'lsp)
 (setq lsp-solargraph-use-bundler t)
 
