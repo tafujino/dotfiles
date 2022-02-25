@@ -38,5 +38,9 @@
 
 ;; isearch
 
-(set-face-attribute 'isearch nil :foreground "white somke" :background "tomato2")
+(set-face-attribute 'isearch nil :foreground "white smoke" :background "tomato2")
 (set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
+
+;; package name
+
+(set-face-attribute 'link nil :foreground "SteelBlue1")
