@@ -38,9 +38,13 @@
 
 ;; isearch
 
-(set-face-attribute 'isearch nil :foreground "white smoke" :background "tomato2")
+(set-face-attribute 'isearch nil :foreground "white smoke" :background "medium violet red")
 (set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
 
 ;; package name
 
 (set-face-attribute 'link nil :foreground "SteelBlue1")
+
+;; confirm Emacs termination
+
+(setq confirm-kill-emacs 'y-or-n-p)
