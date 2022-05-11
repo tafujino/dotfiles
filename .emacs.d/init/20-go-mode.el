@@ -5,5 +5,5 @@
 
 (add-hook 'go-mode-hook (lambda()
            (setq c-basic-offset 4)
-           (setq tab-width 2)
+           (setq tab-width 4)
 	   (add-hook 'before-save-hook 'gofmt-before-save)))
