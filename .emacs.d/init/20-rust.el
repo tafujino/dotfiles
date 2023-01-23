@@ -1,5 +1,6 @@
 (use-package rustic)
 
-(setq rustic-lsp-server 'rls)
+
+(setq lsp-rust-server 'rust-analyzer)
 (setq rustic-lsp-format t)
 (setq rustic-format-trigger 'on-save)
