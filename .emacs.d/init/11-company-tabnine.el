@@ -1,4 +1,4 @@
-(use-package company-tabnine)
-(require 'company-tabnine)
+;;(use-package company-tabnine)
+;;(require 'company-tabnine)
 
-(add-to-list 'company-backends #'company-tabnine)
+;;(add-to-list 'company-backends #'company-tabnine)
