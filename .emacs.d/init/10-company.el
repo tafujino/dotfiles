@@ -53,13 +53,13 @@
 ;; see https://qiita.com/syohex/items/8d21d7422f14e9b53b17
 
 (set-face-attribute 'company-tooltip nil
-                    :foreground "lemon chiffon" :background "dim gray")
-(set-face-attribute 'company-tooltip-common nil
-                    :foreground "lemon chiffon" :background "dim gray")
-(set-face-attribute 'company-tooltip-common-selection nil
                     :foreground "white" :background "black")
+(set-face-attribute 'company-tooltip-common nil
+                    :foreground "white" :background "black")
+(set-face-attribute 'company-tooltip-common-selection nil
+                    :foreground "lemon chiffon" :background "gray35")
 (set-face-attribute 'company-tooltip-selection nil
-                    :foreground "lemon chiffon" :background "black")
+                    :foreground "white" :background "gray35")
 (set-face-attribute 'company-preview-common nil
                     :background nil :foreground "lightgrey" :underline t)
 (set-face-attribute 'company-scrollbar-fg nil
