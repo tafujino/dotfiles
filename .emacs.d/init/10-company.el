@@ -66,3 +66,7 @@
                     :background "orange")
 (set-face-attribute 'company-scrollbar-bg nil
                     :background "gray40")
+
+;; case-sensitive
+
+(setq company-dabbrev-downcase nil)
