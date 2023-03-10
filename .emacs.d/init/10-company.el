@@ -61,7 +61,7 @@
 (set-face-attribute 'company-tooltip-selection nil
                     :foreground "white" :background "gray35")
 (set-face-attribute 'company-preview-common nil
-                    :background nil :foreground "lightgrey" :underline t)
+                    :background nil :foreground "lemon chiffon" :underline t)
 (set-face-attribute 'company-scrollbar-fg nil
                     :background "orange")
 (set-face-attribute 'company-scrollbar-bg nil
