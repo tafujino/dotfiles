@@ -70,3 +70,7 @@
 ;; case-sensitive
 
 (setq company-dabbrev-downcase nil)
+
+;; code mode (enabling autocompletion of a string with underscores)
+
+(setq company-dabbrev-code-modes t)
