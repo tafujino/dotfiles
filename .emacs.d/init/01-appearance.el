@@ -1,32 +1,39 @@
-;;; hide toolbar
+;; theme
+
+(use-package railscasts-theme
+  :ensure t
+  :config (load-theme 'railscasts t))
+
+;; hide toolbar
 
 (tool-bar-mode -1)
 
-;;; hide menubar
+;; hide menubar
 
 (menu-bar-mode -1)
 
-;;; background
+;; background
 
-(set-face-background 'default "gray15")
+;;(set-face-background 'default "gray15")
 
-;;; show-paren-mode
+;; link color
 
+(set-face-attribute 'link nil :foreground "light sky blue")
+
+;; show-paren-mode
+
+(use-package paren :ensure t)
+(set-face-attribute 'show-paren-match nil :foreground "black")
+(set-face-attribute 'show-paren-match nil :background "PaleTurquoise1")
 (show-paren-mode 1)
-
-(require 'paren)
-(set-face-attribute 'show-paren-match nil :background "DeepSkyBlue1")
-(set-face-attribute 'show-paren-match nil :foreground "white smoke")
 
 ;;; disable bell
 
 (setq ring-bell-function 'ignore)
 
-;; highlight-indent-guides
-;; https://github.com/DarthFennec/highlight-indent-guides
+;; highlight indent guides
 
-(use-package highlight-indent-guides
-  :diminish highlight-indent-guides-mode)
+(use-package highlight-indent-guides :ensure t)
 (setq highlight-indent-guides-method 'column)
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 
@@ -38,13 +45,25 @@
 
 ;; isearch
 
-(set-face-attribute 'isearch nil :foreground "white smoke" :background "medium violet red")
-(set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
+;;(set-face-attribute 'isearch nil :foreground "white smoke" :background "medium violet red")
+;;(set-face-attribute 'lazy-highlight nil :foreground "white smoke" :background "royal blue")
 
 ;; package name
 
-(set-face-attribute 'link nil :foreground "SteelBlue1")
+;(set-face-attribute 'link nil :foreground "SteelBlue1")
 
 ;; confirm Emacs termination
 
 (setq confirm-kill-emacs 'y-or-n-p)
+
+;; completions
+
+(set-face-attribute 'completions-common-part nil :foreground "black" :background "PaleTurquoise1")
+
+;;
+
+;;(desktop-save-mode 1)
+(savehist-mode 1)
+
+
+;;

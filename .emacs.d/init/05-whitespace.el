@@ -1,6 +1,7 @@
 ;; show trailing whitespace and lines
 
-(use-package whitespace)
+(use-package whitespace
+  :ensure t)
 (set-face-background 'whitespace-empty "pink4")
 (set-face-background 'whitespace-trailing "pink4")
 (setq whitespace-style '(face

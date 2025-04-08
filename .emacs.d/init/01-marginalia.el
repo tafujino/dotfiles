@@ -13,3 +13,6 @@
   ;; the mode gets enabled right away. Note that this forces loading the
   ;; package.
   (marginalia-mode))
+
+(set-face-attribute 'marginalia-documentation nil :foreground "gray50")
+

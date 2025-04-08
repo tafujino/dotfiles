@@ -3,7 +3,7 @@
              '("melpa" . "https://melpa.org/packages/") t)
 
 (use-package init-loader :ensure t)
-(init-loader-load "~/.emacs.d/inits")
+(init-loader-load "~/.emacs.d/init")
 
 ;; ;; straight
 ;;

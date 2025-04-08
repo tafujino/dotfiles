@@ -9,21 +9,20 @@
 (setq mac-option-modifier 'super)
 
 ;;; font
-
-(cond ((display-graphic-p)
-       (set-face-attribute 'default nil :family "Menlo" :height 130)
-       (set-fontset-font (frame-parameter nil 'font)
-			 'japanese-jisx0208
-			 (font-spec :family "YuGothic"))
-       (add-to-list 'face-font-rescale-alist
-		    '("YuGothic" . 1.2)) )
-      (t 0))
+(set-face-attribute 'default nil :family "Moralerspace Argon" :height 130)
+;;(set-face-attribute 'default nil :family "MyricaM M" :height 170)
+;;(set-face-attribute 'default nil :family "Pending Mono" :height 130)
+;;(set-face-attribute 'default nil :family "HackGen35" :height 130)
+;;(set-face-attribute 'default nil :family "UDEV Gothic 35" :height 130)
+;;(set-face-attribute 'default nil :family "PlemolJP35" :height 130)
 
 ;; disable cursor blinking
 
 (blink-cursor-mode -1)
 
-;;; path
+;;; https://github.com/purcell/exec-path-from-shell
 
-(use-package exec-path-from-shell)
-(exec-path-from-shell-initialize)
+(use-package exec-path-from-shell :ensure t)
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
