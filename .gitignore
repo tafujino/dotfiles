@@ -1,5 +1,6 @@
 *~
 */.*
+*.elc
 .emacs.d/recentf
 .emacs.d/tramp
 .emacs.d/elpa
@@ -8,4 +9,5 @@
 .emacs.d/straight/*
 !.emacs.d/straight/versions/
 .emacs.d/transient/
-
+.emacs.d/#recentf#
+.emacs.d/history

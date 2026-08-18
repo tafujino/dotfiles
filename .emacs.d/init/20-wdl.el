@@ -1,2 +1,1 @@
-(use-package poly-wdl
-  :ensure t)
+(use-package wdl-mode :ensure t)
