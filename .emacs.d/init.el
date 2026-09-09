@@ -39,3 +39,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; avoid freezing 2026-08-29
+
+(setq debug-on-error nil)
+(setq debug-on-quit  nil)
+
+(setq enable-recursive-minibuffers t)
+(minibuffer-depth-indicate-mode 1)
